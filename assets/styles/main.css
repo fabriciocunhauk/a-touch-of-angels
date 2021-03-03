@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body,
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.main-section {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../images/01-landing-bg.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #464646;
+    position: relative;
+}
+
+.main-section::after {
+    content: '';
+    background: black;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+}
+
+.main-section .main-section-content {
+    width: 580px;
+}
+
+.main-section .main-section-content h1 {
+    margin-left: 80px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 10px black;
+    position: relative;
+    z-index: 1;
+}
+
+.main-section .main-section-content p {
+    margin-left: 80px;
+    color: white;
+    margin-top: 20px;
+    text-shadow: 1px 1px 10px black;
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 700px) {
+    .main-section h1 {
+        margin: 10px;
+    }
+}
+
+.main-section h1 span {
+    opacity: 0;
+    transition: all 0.5s ease;
+    transform: translateY(10px);
+    display: inline-block;
+}
+
+.main-section h1 .fade {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.middle-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    min-height: 100vh;
+    background: white;
+}
+
+.middle-section img {
+    width: 300px;
+    height: 400px;
+}
+
+.keep-track {
+    width: 30%;
+}
+
+@media (max-width: 700px) {
+    .keep-track {
+        width: 60%;
+        margin: 30px;
+    }
+}
+
+.keep-track h1 {
+    font-size: 40px;
+}
+
+.keep-track p {
+    margin-top: 20px;
+}
+
+.advice-section {
+    width: 100vw;
+    padding: 90px;
+    background: #F0F0F0;
+}
+
+.advice-section .advice-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+
+.advice-section .advice-card .advice-text {
+    width: 30%;
+}
+
+@media (max-width: 700px) {
+    .advice-section .advice-card .advice-text {
+        width: 60%;
+    }
+}
+
+.advice-section .advice-card .advice-text h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.advice-section .advice-card img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 10px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100px;
+    background: #0088FF;
+}
+
+.footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.footer ul li a {
+    display: flex;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+@media (max-width: 700px) {
+    .footer ul li a {
+        font-size: 15px;
+    }
+}
+
+.footer ul li a img {
+    padding: 10px;
+}
