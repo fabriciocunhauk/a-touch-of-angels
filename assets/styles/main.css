@@ -43,7 +43,7 @@ html {
     align-items: center;
     justify-content: space-around;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url('../images/01-landing-bg.jpg');
     background-position: center center;
     background-attachment: fixed;
@@ -57,7 +57,7 @@ html {
     content: '';
     background: black;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     position: absolute;
     opacity: 0.3;
     top: 0;
@@ -177,7 +177,7 @@ form .btn-form:hover {
 
 @media (max-width: 700px) {
     .keep-track {
-        width: 60%;
+        width: 70%;
         margin: 30px;
     }
 }
@@ -196,6 +196,15 @@ form .btn-form:hover {
     background: #F0F0F0;
 }
 
+@media (max-width: 700px) {
+    .advice-section {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 0;
+    }
+}
+
 .advice-section .advice-card {
     display: flex;
     align-items: center;
@@ -210,7 +219,8 @@ form .btn-form:hover {
 
 @media (max-width: 700px) {
     .advice-section .advice-card .advice-text {
-        width: 60%;
+        width: 70%;
+        margin-right: 50px;
     }
 }
 
