@@ -235,11 +235,25 @@ form .btn-form:hover {
 
 .footer {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     width: 100vw;
-    height: 100px;
+    height: 200px;
     background: #4a47a3;
+}
+
+.footer .footer-company-image {
+    display: flex;
+    align-items: center;
+}
+
+.footer .footer-company-image .clean-icon {
+    margin-left: 10px;
+}
+
+.footer .bottom-footer-link {
+    color: white;
 }
 
 .footer ul {
@@ -247,6 +261,21 @@ form .btn-form:hover {
     align-items: center;
     justify-content: center;
     list-style: none;
+}
+
+.footer ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #a7c5eb;
+}
+
+.footer ul li:hover {
+    background: #413c69;
 }
 
 .footer ul li a {
