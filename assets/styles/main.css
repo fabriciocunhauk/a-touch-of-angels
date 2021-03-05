@@ -14,7 +14,9 @@ html {
 
 .main-section {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-around;
     width: 100vw;
     height: 100vh;
     background-image: url('../images/01-landing-bg.jpg');
@@ -32,13 +34,14 @@ html {
     width: 100vw;
     height: 100vh;
     position: absolute;
-    opacity: 0.2;
+    opacity: 0.3;
     top: 0;
     left: 0;
 }
 
 .main-section .main-section-content {
     width: 580px;
+    z-index: 1;
 }
 
 .main-section .main-section-content h1 {
@@ -46,9 +49,6 @@ html {
     font-size: 2rem;
     font-weight: bold;
     color: white;
-    text-shadow: 1px 1px 10px black;
-    position: relative;
-    z-index: 1;
 }
 
 .main-section .main-section-content p {
@@ -76,6 +76,59 @@ html {
 .main-section h1 .fade {
     opacity: 1;
     transform: translateY(0px);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 500px;
+    background: #F0F0F0;
+    border-radius: 8px;
+    box-shadow: 1px 1px 50px black;
+    z-index: 1;
+}
+
+@media (max-width: 1400px) {
+    form {
+        margin-top: 90px;
+    }
+}
+
+form .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+form .form-group input {
+    width: 300px;
+    height: 40px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid lightgray;
+}
+
+form .btn-form {
+    cursor: pointer;
+    border-radius: 8px;
+    color: white;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    margin-top: 90px;
+    width: 200px;
+    height: 50px;
+    background: #4a47a3;
+    box-shadow: 1px 1px 10px black;
+    transition: all 0.4s ease-in-out;
+}
+
+form .btn-form:hover {
+    background: #a7c5eb;
+    color: black;
+    transform: scale(1.01);
 }
 
 .middle-section {
@@ -150,13 +203,18 @@ html {
     padding: 10px;
 }
 
+.new-section {
+    width: 100vw;
+    height: 100vh;
+}
+
 .footer {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100vw;
     height: 100px;
-    background: #0088FF;
+    background: #4a47a3;
 }
 
 .footer ul {
