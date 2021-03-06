@@ -17,6 +17,12 @@ nav .nav-title {
     margin-left: 20px;
 }
 
+@media (max-width: 700px) {
+    nav .nav-title {
+        font-size: 13px;
+    }
+}
+
 nav a {
     text-decoration: none;
 }
@@ -24,7 +30,7 @@ nav a {
 nav .nav-title .clean-icon {
     width: 30px;
     height: 30px;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 nav .nav-title .clean-icon img {

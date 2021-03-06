@@ -44,7 +44,7 @@ html {
     justify-content: space-around;
     width: 100vw;
     min-height: 100vh;
-    background-image: url('../images/01-landing-bg.jpg');
+    background-image: url('../images/02-landing-bg.jpg');
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
@@ -57,11 +57,11 @@ html {
     content: '';
     background: black;
     width: 100vw;
-    min-height: 100vh;
     position: absolute;
     opacity: 0.3;
     top: 0;
     left: 0;
+    bottom: 0;
 }
 
 .main-section .main-section-content {
@@ -86,8 +86,12 @@ html {
 }
 
 @media (max-width: 700px) {
-    .main-section h1 {
-        margin: 10px;
+    .main-section .main-section-content {
+        margin-right: 50px;
+    }
+
+    .main-section .main-section-content h1 {
+        margin-top: 90px;
     }
 }
 
@@ -113,12 +117,6 @@ form {
     border-radius: 8px;
     box-shadow: 1px 1px 50px black;
     z-index: 1;
-}
-
-@media (max-width: 1400px) {
-    form {
-        margin-top: 90px;
-    }
 }
 
 form .form-group {
@@ -148,6 +146,23 @@ form .btn-form {
     background: #4a47a3;
     box-shadow: 1px 1px 10px black;
     transition: all 0.4s ease-in-out;
+}
+
+@media (max-width: 1400px) {
+    form {
+        width: 300px;
+        height: 400px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    form .form-group input {
+        width: 250px;
+    }
+
+    form .btn-form {
+        margin-top: 10px;
+    }
 }
 
 form .btn-form:hover {
