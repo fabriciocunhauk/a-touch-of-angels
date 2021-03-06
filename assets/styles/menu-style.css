@@ -21,8 +21,15 @@ nav a {
     text-decoration: none;
 }
 
-nav .nav-title img {
+nav .nav-title .clean-icon {
+    width: 30px;
+    height: 30px;
     margin-left: 10px;
+}
+
+nav .nav-title .clean-icon img {
+    width: 30px;
+    height: 30px;
 }
 
 nav .menu-container img {

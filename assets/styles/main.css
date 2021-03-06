@@ -259,7 +259,14 @@ form .btn-form:hover {
 }
 
 .footer .footer-company-image .clean-icon {
+    width: 30px;
+    height: 30px;
     margin-left: 10px;
+}
+
+.footer .footer-company-image .clean-icon img {
+    width: 30px;
+    height: 30px;
 }
 
 .footer .bottom-footer-link {
