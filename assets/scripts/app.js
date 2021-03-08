@@ -3,7 +3,6 @@ const textString = homeH1.textContent;
 const splitLetters = textString.split("");
 
 homeH1.textContent = "";
-console.log(splitLetters);
 
 for (let i = 0; i < splitLetters.length; i++) {
     if (splitLetters[i] === " ") {

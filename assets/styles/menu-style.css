@@ -17,12 +17,6 @@ nav .nav-title {
     margin-left: 20px;
 }
 
-@media (max-width: 700px) {
-    nav .nav-title {
-        font-size: 13px;
-    }
-}
-
 nav a {
     text-decoration: none;
 }
@@ -36,6 +30,46 @@ nav .nav-title .clean-icon {
 nav .nav-title .clean-icon img {
     width: 30px;
     height: 30px;
+}
+
+@media (max-width: 700px) {
+    nav .nav-title {
+        font-size: 10px;
+    }
+
+    nav .nav-title .clean-icon img {
+        margin-left: -20px;
+    }
+}
+
+nav .menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .menu-container .menu-container-call-now-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 8px;
+    width: 120px;
+    height: 30px;
+    background: #4CAF50;
+    cursor: pointer;
+    box-shadow: 0px 1px 10px black;
+    transition: all 0.2s ease-in-out;
+}
+
+nav .menu-container .menu-container-call-now-btn:hover {
+    transform: scale(1.03);
+}
+
+@media (max-width: 700px) {
+    nav .menu-container .menu-container-call-now-btn {
+        margin-right: -20px;
+    }
 }
 
 nav .menu-container img {
