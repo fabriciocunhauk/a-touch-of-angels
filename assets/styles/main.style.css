@@ -1,47 +1,8 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
-}
-
-body,
-html {
-    overflow-x: hidden;
-    width: 100%;
-}
-
-
-.float {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 40px;
-    right: 40px;
-    background-color: #25d366;
-    color: #FFF;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 2px 2px 3px #999;
-    z-index: 100;
-    transition: all 0.2s ease-in-out;
-}
-
-.my-float {
-    margin-top: 16px;
-}
-
-.float:hover {
-    transform: scale(1.07);
-}
-
 .main-section {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 100vw;
     min-height: 100vh;
     background-image: url('../images/02-landing-bg.jpg');
@@ -70,14 +31,12 @@ html {
 }
 
 .main-section .main-section-content h1 {
-    margin-left: 80px;
     font-size: 2rem;
     font-weight: bold;
     color: white;
 }
 
 .main-section .main-section-content p {
-    margin-left: 80px;
     color: white;
     margin-top: 20px;
     text-shadow: 1px 1px 10px black;
@@ -87,7 +46,7 @@ html {
 
 @media (max-width: 700px) {
     .main-section .main-section-content {
-        margin-right: 50px;
+        width: 260px;
     }
 
     .main-section .main-section-content h1 {
@@ -148,6 +107,12 @@ form .btn-form {
     transition: all 0.4s ease-in-out;
 }
 
+form .btn-form:hover {
+    background: #a7c5eb;
+    color: black;
+    transform: scale(1.01);
+}
+
 @media (max-width: 1400px) {
     form {
         width: 300px;
@@ -163,12 +128,6 @@ form .btn-form {
     form .btn-form {
         margin-top: 40px;
     }
-}
-
-form .btn-form:hover {
-    background: #a7c5eb;
-    color: black;
-    transform: scale(1.01);
 }
 
 .middle-section {
@@ -197,13 +156,6 @@ form .btn-form:hover {
     width: 30%;
 }
 
-@media (max-width: 700px) {
-    .keep-track {
-        width: 70%;
-        margin: 30px;
-    }
-}
-
 .keep-track h2 {
     font-size: 2.5rem;
 }
@@ -212,38 +164,28 @@ form .btn-form:hover {
     margin-top: 20px;
 }
 
-.advice-section {
-    width: 100vw;
-    padding: 90px;
-    background: #F0F0F0;
+@media (max-width: 700px) {
+    .keep-track {
+        width: 70%;
+        margin: 30px;
+    }
 }
 
-@media (max-width: 700px) {
-    .advice-section {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        padding: 0;
-    }
+.advice-section {
+    width: 100vw;
+    background: #F0F0F0;
+    padding: 50px 0;
 }
 
 .advice-section .advice-card {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    width: 100vw;
 }
 
 .advice-section .advice-card .advice-text {
     width: 30%;
-}
-
-@media (max-width: 700px) {
-    .advice-section .advice-card .advice-text {
-        width: 70%;
-        margin-right: 50px;
-    }
 }
 
 .advice-section .advice-card .advice-text h2 {
@@ -260,77 +202,21 @@ form .btn-form:hover {
     padding: 10px;
 }
 
-.new-section {
-    width: 100vw;
-    height: 100vh;
-}
-
-.footer {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    width: 100vw;
-    height: 200px;
-    background: #4a47a3;
-}
-
-.footer .footer-company-image {
-    display: flex;
-    align-items: center;
-}
-
-.footer .footer-company-image .clean-icon {
-    width: 30px;
-    height: 30px;
-    margin-left: 10px;
-}
-
-.footer .footer-company-image .clean-icon img {
-    width: 30px;
-    height: 30px;
-}
-
-.footer .bottom-footer-link {
-    color: white;
-}
-
-.footer ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    list-style: none;
-}
-
-.footer ul li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 5px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: #a7c5eb;
-}
-
-.footer ul li:hover {
-    background: #413c69;
-}
-
-.footer ul li a {
-    display: flex;
-    align-items: center;
-    color: black;
-    text-decoration: none;
-    font-size: 20px;
-}
-
 @media (max-width: 700px) {
-    .footer ul li a {
-        font-size: 15px;
+    .advice-section {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 0;
+    }
+
+    .advice-section .advice-card .advice-text {
+        width: 70%;
+        margin-right: 50px;
     }
 }
 
-.footer ul li a img {
-    padding: 10px;
+.new-section {
+    width: 100vw;
+    height: 100vh;
 }

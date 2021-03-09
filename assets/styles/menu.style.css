@@ -1,0 +1,115 @@
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 60px;
+    background: #4a47a3;
+    box-shadow: 0px 1px 10px black;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+}
+
+header nav .nav-title {
+    display: flex;
+    color: white;
+    margin-left: 20px;
+}
+
+header nav .nav-title .clean-icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+header nav .nav-title .clean-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+header nav .menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .menu-container .menu-container-call-now-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 3px;
+    width: 150px;
+    height: 35px;
+    background: #1fdb6a;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+header nav .menu-container .menu-container-call-now-btn:hover {
+    transform: scale(1.03);
+    background: #1fdb8a;
+}
+
+header nav .menu-container img {
+    margin: auto 40px;
+    cursor: pointer;
+}
+
+header nav .menu-container .burger-menu-div {
+    width: 0;
+    height: 565px;
+    top: 60px;
+    right: 0;
+    background: #F0F0F0;
+    opacity: .9;
+    box-shadow: inset 0px 0px 10px black;
+    transition: all .5s ease-in-out;
+    position: fixed;
+}
+
+header nav .menu-container .burger-menu-div .burger-menu-buttons {
+    text-align: center;
+    list-style: none;
+    margin-top: 100px;
+}
+
+header nav .menu-container .burger-menu-div .burger-menu-buttons .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    margin: 40px auto;
+    width: 200px;
+    height: 40px;
+    background: #4a47a3;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+header nav .menu-container .burger-menu-div .burger-menu-buttons .link:hover {
+    background: #a7c5eb;
+    color: black;
+}
+
+@media (max-width: 700px) {
+    header nav .nav-title {
+        font-size: 10px;
+    }
+
+    header nav .nav-title .clean-icon {
+        margin-left: 0;
+    }
+
+    header nav .nav-title .clean-icon img {
+        margin-left: -20px;
+    }
+
+    header nav .menu-container .menu-container-call-now-btn {
+        margin-right: -20px;
+        width: 110px;
+    }
+}
