@@ -152,6 +152,12 @@ form .btn-form:hover {
     }
 }
 
+@media (max-width: 700px) {
+    .middle-section img {
+        margin-bottom: 20px;
+    }
+}
+
 .keep-track {
     width: 30%;
 }
