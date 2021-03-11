@@ -130,7 +130,7 @@ form .btn-form:hover {
     }
 }
 
-.middle-section {
+.about-section {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -140,67 +140,67 @@ form .btn-form:hover {
     background: white;
 }
 
-.middle-section img {
+.about-section img {
     width: 400px;
     height: 500px;
 }
 
 @media (max-width: 1400px) {
-    .middle-section img {
+    .about-section img {
         width: 300px;
         height: 400px;
     }
 }
 
 @media (max-width: 700px) {
-    .middle-section img {
+    .about-section img {
         margin-bottom: 20px;
     }
 }
 
-.keep-track {
+.about-section-content {
     width: 30%;
 }
 
-.keep-track h2 {
+.about-section-content h2 {
     font-size: 2.5rem;
 }
 
-.keep-track p {
+.about-section-content p {
     margin-top: 20px;
 }
 
 @media (max-width: 700px) {
-    .keep-track {
+    .about-section-content {
         width: 70%;
         margin: 30px;
     }
 }
 
-.advice-section {
+.services-section {
     width: 100vw;
     background: #F0F0F0;
     padding: 50px 0;
 }
 
-.advice-section .advice-card {
+.services-section .service-card {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
-.advice-section .advice-card .advice-text {
+.services-section .service-card .service-card-text {
     width: 30%;
 }
 
-.advice-section .advice-card .advice-text h2 {
+.services-section .service-card .service-card-text h2 {
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 2.5rem;
 }
 
-.advice-section .advice-card img {
+.services-section .service-card img {
     width: 300px;
     height: 300px;
     border-radius: 50%;
@@ -209,20 +209,20 @@ form .btn-form:hover {
 }
 
 @media (max-width: 700px) {
-    .advice-section {
+    .services-section {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         padding: 0;
     }
 
-    .advice-section .advice-card .advice-text {
+    .services-section .service-card .service-card-text {
         width: 70%;
         margin-right: 50px;
     }
 }
 
-.new-section {
+.testimonials-section {
     width: 100vw;
     height: 100vh;
 }
