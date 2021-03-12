@@ -225,20 +225,20 @@ form .btn-form:hover {
 .testimonials-section {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 100vw;
     height: 100vh;
 }
 
-.testimonials-section .testimonials-caroucel {
+.testimonials-section .testimonials-carousel {
     display: flex;
     -webkit-overflow-scrolling: touch;
     overflow-x: scroll;
-    width: 70%;
+    width: 45%;
     padding: 10px;
 }
 
-.testimonials-section .testimonials-caroucel .testimonials-caroucel-card {
+.testimonials-section .testimonials-carousel .testimonials-carousel-card {
     flex: none;
     width: 300px;
     height: 230px;
@@ -247,13 +247,21 @@ form .btn-form:hover {
     outline: 1px solid;
 }
 
-.testimonials-section .testimonials-caroucel .testimonials-caroucel-card p {
+.testimonials-section .testimonials-carousel .testimonials-carousel-card p {
     font-size: 13px;
 }
 
-.testimonials-section .testimonials-caroucel .testimonials-caroucel-card img {
+.testimonials-section .testimonials-carousel .testimonials-carousel-card img {
     width: 60px;
     height: 60px;
     object-fit: cover;
     border-radius: 50%;
+}
+
+.testimonials-btn {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
 }
