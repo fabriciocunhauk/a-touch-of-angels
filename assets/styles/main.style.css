@@ -227,7 +227,24 @@ form .btn-form:hover {
     align-items: center;
     justify-content: space-evenly;
     width: 100vw;
-    height: 100vh;
+    height: 400px;
+    position: relative;
+    background-image: url('../images/02-landing-bg.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.testimonials-section::after {
+    content: '';
+    background: black;
+    width: 100vw;
+    position: absolute;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
 }
 
 .testimonials-section .testimonials-carousel {
@@ -236,6 +253,7 @@ form .btn-form:hover {
     overflow-x: hidden;
     width: 645px;
     padding: 10px;
+    z-index: 1;
 }
 
 .testimonials-section .testimonials-carousel .carousel-slider {
@@ -244,11 +262,13 @@ form .btn-form:hover {
 
 .testimonials-section .testimonials-carousel .testimonials-carousel-card {
     flex: none;
+    background: white;
+    border-radius: 5px;
+    outline: none;
     width: 300px;
     height: 230px;
     margin: 10px;
     padding: 10px;
-    outline: 1px solid;
 }
 
 .testimonials-section .testimonials-carousel .testimonials-carousel-card p {
@@ -266,11 +286,20 @@ form .btn-form:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: transparent;
     width: 60px;
     height: 60px;
     border-radius: 50%;
     cursor: pointer;
     outline: none;
+    border: 1px solid hsla(0, 0%, 100%, 0.4);
+    transition: all 0.2s ease-in-out;
+    z-index: 1;
+
+}
+
+.testimonials-btn:hover {
+    border: 1px solid white;
 }
 
 @media (max-width: 540px) {

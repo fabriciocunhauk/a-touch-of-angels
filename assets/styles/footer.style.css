@@ -44,6 +44,7 @@
     height: 40px;
     border-radius: 50%;
     background: #a7c5eb;
+    transition: all 0.4s ease-in-out;
 }
 
 .footer ul li:hover {

@@ -108,7 +108,6 @@ function cardMoveForward() {
     carouselSlider.style.transition = "transform 0.4s ease-in-out";
     if (counter <= carouselLength) {
         counter++;
-        console.log(counter);
         carouselSlider.style.transform = 'translateX(' + (-cardSize * counter) + 'px)';
     }
 
