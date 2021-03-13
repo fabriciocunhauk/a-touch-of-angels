@@ -99,6 +99,10 @@ let counter = 0;
 const cardSize = carouselCard.clientWidth + 25;
 const carouselLength = cardData.length;
 
+setInterval(function () {
+    cardMoveForward()
+}, 5000)
+
 function cardMoveForward() {
     if (counter === carouselLength - 1) return
     carouselSlider.style.transition = "transform 0.4s ease-in-out";
