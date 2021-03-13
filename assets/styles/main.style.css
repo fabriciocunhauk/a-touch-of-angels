@@ -233,9 +233,13 @@ form .btn-form:hover {
 .testimonials-section .testimonials-carousel {
     display: flex;
     -webkit-overflow-scrolling: touch;
-    overflow-x: scroll;
-    width: 45%;
+    overflow-x: hidden;
+    width: 645px;
     padding: 10px;
+}
+
+.testimonials-section .testimonials-carousel .carousel-slider {
+    display: flex;
 }
 
 .testimonials-section .testimonials-carousel .testimonials-carousel-card {
@@ -259,9 +263,22 @@ form .btn-form:hover {
 }
 
 .testimonials-btn {
-    width: 80px;
-    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     cursor: pointer;
     outline: none;
+}
+
+@media (max-width: 540px) {
+    .testimonials-btn {
+        display: none;
+    }
+
+    .testimonials-section .testimonials-carousel {
+        width: 320px;
+    }
 }

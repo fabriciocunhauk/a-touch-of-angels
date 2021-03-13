@@ -32,7 +32,6 @@ function complete() {
 }
 
 const burgerMenu = document.getElementById('burger-menu');
-const sideMenu = document.getElementById('menu-container');
 const burgerMenuDiv = document.querySelector('.burger-menu-div');
 
 burgerMenu.addEventListener('click', handleMenu);
@@ -57,24 +56,71 @@ function menuClose() {
     burgerMenuDiv.style.width = '0';
 };
 
+// Carousel Testimonials
+
 const carousel = document.querySelector('#carousel-container');
 
+const carouselSliderDiv = document.createElement('div');
+carouselSliderDiv.classList.add('carousel-slider');
+carouselSliderDiv.setAttribute("id", 'carousel-slider-container');
+carousel.appendChild(carouselSliderDiv);
+
 cardData.forEach(card => {
-    const carouselCard = document.createElement('div');
-    carouselCard.classList.add('testimonials-carousel-card');
-    carousel.appendChild(carouselCard);
+    const carouselCardDiv = document.createElement('div');
+    carouselCardDiv.classList.add('testimonials-carousel-card');
+    carouselCardDiv.setAttribute("id", "carousel-card");
+    carouselSliderDiv.appendChild(carouselCardDiv);
 
     const cardImage = document.createElement('img');
     cardImage.setAttribute("src", card.image);
     cardImage.setAttribute("alt", "person");
-    carouselCard.appendChild(cardImage);
+    carouselCardDiv.appendChild(cardImage);
 
     const cardTitleH2 = document.createElement('h2');
     cardTitleH2.textContent = card.name;
-    carouselCard.appendChild(cardTitleH2);
+    carouselCardDiv.appendChild(cardTitleH2);
 
     const cardParagraph = document.createElement('p');
     cardParagraph.textContent = card.paragraph;
-    carouselCard.appendChild(cardParagraph);
+    carouselCardDiv.appendChild(cardParagraph);
 });
 
+// Carousel slider
+
+const carouselSlider = document.getElementById('carousel-slider-container');
+const carouselCard = document.getElementById('carousel-card');
+const nextButton = document.querySelector('#next-btn');
+const previousButton = document.querySelector('#previous-btn');
+
+nextButton.addEventListener('click', cardMoveForward);
+previousButton.addEventListener('click', cardMoveBackward);
+
+let counter = 0;
+const cardSize = carouselCard.clientWidth + 25;
+const carouselLength = cardData.length;
+
+function cardMoveForward() {
+    if (counter === carouselLength - 1) return
+    carouselSlider.style.transition = "transform 0.4s ease-in-out";
+    if (counter <= carouselLength) {
+        counter++;
+        console.log(counter);
+        carouselSlider.style.transform = 'translateX(' + (-cardSize * counter) + 'px)';
+    }
+
+    if (counter === 4) {
+        carouselSlider.style.transition = "transform 0.4s ease-in-out";
+        counter = 0;
+        carouselSlider.style.transform = 'translateX(' + (-cardSize * counter) + 'px)';
+    }
+}
+
+function cardMoveBackward() {
+    if (counter === 0) return
+
+    carouselSlider.style.transition = "transform 0.4s ease-in-out";
+    if (counter >= 0) {
+        counter--;
+        carouselSlider.style.transform = 'translateX(' + (-cardSize * counter) + 'px)';
+    }
+}
