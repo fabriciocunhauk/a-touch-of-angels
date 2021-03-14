@@ -32,6 +32,7 @@ header nav .menu-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-right: 20px;
 }
 
 header nav .menu-container .menu-container-call-now-btn {
@@ -42,6 +43,7 @@ header nav .menu-container .menu-container-call-now-btn {
     border-radius: 3px;
     width: 150px;
     height: 35px;
+    margin-right: 40px;
     background: #1fdb6a;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
@@ -52,8 +54,29 @@ header nav .menu-container .menu-container-call-now-btn:hover {
     background: #1fdb8a;
 }
 
+.menu-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 350px;
+}
+
+.menu-buttons li a {
+    color: white;
+}
+
+.menu-buttons li {
+    height: 30px;
+}
+
+.menu-buttons li:hover {
+    border-bottom: 2px solid white;
+}
+
 header nav .menu-container img {
-    margin: auto 40px;
+    display: none;
+    margin-left: 40px;
+    margin-right: 20px;
     cursor: pointer;
 }
 
@@ -71,7 +94,6 @@ header nav .menu-container .burger-menu-div {
 
 header nav .menu-container .burger-menu-div .burger-menu-buttons {
     text-align: center;
-    list-style: none;
     margin-top: 100px;
 }
 
@@ -88,6 +110,7 @@ header nav .menu-container .burger-menu-div .burger-menu-buttons .link {
     border-radius: 8px;
     font-size: 1.5rem;
     color: white;
+    transition: all 0.4s ease-in-out;
 }
 
 header nav .menu-container .burger-menu-div .burger-menu-buttons .link:hover {
@@ -95,17 +118,29 @@ header nav .menu-container .burger-menu-div .burger-menu-buttons .link:hover {
     color: black;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
     header nav .nav-title {
         font-size: 10px;
     }
 
     header nav .nav-title .clean-icon {
-        margin-left: 0;
+        margin-right: 30px;
     }
 
     header nav .nav-title .clean-icon img {
-        margin-left: -20px;
+        margin-left: -5px;
+    }
+
+    .menu-buttons {
+        display: none;
+    }
+
+    header nav .menu-container {
+        margin-right: 0;
+    }
+
+    header nav .menu-container img {
+        display: flex;
     }
 
     header nav .menu-container .menu-container-call-now-btn {

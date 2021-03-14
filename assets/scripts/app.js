@@ -1,5 +1,7 @@
 import { cardData } from '../../card-data.js';
 
+// Title animation
+
 const homeH1 = document.querySelector('.home-section-h1');
 const textString = homeH1.textContent;
 const splitLetters = textString.split("");
@@ -8,18 +10,18 @@ homeH1.textContent = "";
 
 for (let i = 0; i < splitLetters.length; i++) {
     if (splitLetters[i] === " ") {
-        homeH1.innerHTML += splitLetters[i]
+        homeH1.innerHTML += splitLetters[i];
     }
-    homeH1.innerHTML += '<span>' + splitLetters[i] + '</span>'
-}
+    homeH1.innerHTML += '<span>' + splitLetters[i] + '</span>';
+};
 
 let char = 0;
 let timer = setInterval(onTick, 20);
 
 function onTick() {
     const span = homeH1.querySelectorAll('span')[char];
-    span.classList.add('fade')
-    char++
+    span.classList.add('fade');
+    char++;
     if (char === splitLetters.length) {
         complete();
         return
@@ -29,12 +31,19 @@ function onTick() {
 function complete() {
     clearInterval(timer);
     timer = null;
-}
+};
+
+// Menu animation
 
 const burgerMenu = document.getElementById('burger-menu');
 const burgerMenuDiv = document.querySelector('.burger-menu-div');
+const menuLink = document.querySelectorAll('.link');
 
 burgerMenu.addEventListener('click', handleMenu);
+
+menuLink.forEach(link => {
+    link.addEventListener('click', menuClose);
+});
 
 let menuEvent = false;
 
@@ -101,7 +110,7 @@ const carouselLength = cardData.length;
 
 setInterval(function () {
     cardMoveForward()
-}, 5000)
+}, 5000);
 
 function cardMoveForward() {
     if (counter === carouselLength - 1) return
@@ -116,7 +125,7 @@ function cardMoveForward() {
         counter = 0;
         carouselSlider.style.transform = 'translateX(' + (-cardSize * counter) + 'px)';
     }
-}
+};
 
 function cardMoveBackward() {
     if (counter === 0) return
@@ -126,4 +135,4 @@ function cardMoveBackward() {
         counter--;
         carouselSlider.style.transform = 'translateX(' + (-cardSize * counter) + 'px)';
     }
-}
+};
