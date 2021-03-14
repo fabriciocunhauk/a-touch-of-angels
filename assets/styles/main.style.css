@@ -5,13 +5,16 @@
     justify-content: space-evenly;
     width: 100vw;
     min-height: 100vh;
+    position: relative;
+}
+
+.main-section-bg {
     background-image: url('../images/02-landing-bg.jpg');
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #464646;
-    position: relative;
 }
 
 .main-section::after {

@@ -76,7 +76,7 @@ cardData.forEach(card => {
     cardImage.setAttribute("alt", "person");
     carouselCardDiv.appendChild(cardImage);
 
-    const cardTitleH2 = document.createElement('h2');
+    const cardTitleH2 = document.createElement('h3');
     cardTitleH2.textContent = card.name;
     carouselCardDiv.appendChild(cardTitleH2);
 
