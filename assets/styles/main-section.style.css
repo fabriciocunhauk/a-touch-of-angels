@@ -47,16 +47,6 @@
     z-index: 1;
 }
 
-@media (max-width: 700px) {
-    .main-section .main-section-content {
-        width: 260px;
-    }
-
-    .main-section .main-section-content h1 {
-        margin-top: 90px;
-    }
-}
-
 .main-section h1 span {
     opacity: 0;
     transition: all 0.5s ease;
@@ -116,6 +106,16 @@ form .btn-form:hover {
     transform: scale(1.01);
 }
 
+@media (max-width: 700px) {
+    .main-section .main-section-content {
+        width: 260px;
+    }
+
+    .main-section .main-section-content h1 {
+        margin-top: 90px;
+    }
+}
+
 @media (max-width: 1400px) {
     form {
         width: 300px;
@@ -130,50 +130,5 @@ form .btn-form:hover {
 
     form .btn-form {
         margin-top: 40px;
-    }
-}
-
-.services-section {
-    width: 100vw;
-    background: #F0F0F0;
-    padding: 50px 0;
-}
-
-.services-section .service-card {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.services-section .service-card .service-card-text {
-    width: 30%;
-}
-
-.services-section .service-card .service-card-text h2 {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 2.5rem;
-}
-
-.services-section .service-card img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    object-fit: cover;
-    padding: 10px;
-}
-
-@media (max-width: 700px) {
-    .services-section {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        padding: 0;
-    }
-
-    .services-section .service-card .service-card-text {
-        width: 70%;
-        margin-right: 50px;
     }
 }
