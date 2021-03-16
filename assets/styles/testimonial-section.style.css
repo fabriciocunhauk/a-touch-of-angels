@@ -7,7 +7,6 @@
     position: relative;
     background-image: url('../images/02-landing-bg.jpg');
     background-position: center center;
-    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -85,5 +84,6 @@
 
     .testimonials-section .testimonials-carousel {
         width: 320px;
+        overflow-x: scroll;
     }
 }
