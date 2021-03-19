@@ -1,9 +1,10 @@
 .faqs {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 500px;
+    min-height: 500px;
+}
+
+.faqs h2 {
+    text-align: center;
+    margin-top: 20px;
 }
 
 .faqs__container {
@@ -19,13 +20,30 @@
 }
 
 .faqs__btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: absolute;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: white;
+    font-weight: bold;
+    font-size: 16px;
     width: 100%;
     height: 50px;
 }
 
+.faqs__btn img {
+    margin-right: 10px;
+}
+
+.faqs__btn:hover {
+    color: blue;
+}
+
 .faqs__accordion-content {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid grey;
 }
 
 .faqs__accordion-content p {
