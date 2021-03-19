@@ -94,6 +94,22 @@ cardData.forEach(card => {
     carouselCardDiv.appendChild(cardParagraph);
 });
 
+// Accordion
+
+const accordionBtn = document.querySelectorAll('#faqs-btn');
+const accordionText = document.querySelectorAll('.accordion-text');
+
+accordionBtn.forEach((btn, btnI) => {
+    btn.addEventListener('click', function openAccordion() {
+        accordionText.forEach((txt, i) => {
+            if (i === btnI) {
+                txt.classList.toggle('faqs__accordion-expand');
+            }
+        });
+    });
+});
+
+
 // Carousel slider
 
 const carouselSlider = document.getElementById('carousel-slider-container');

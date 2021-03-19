@@ -1,0 +1,38 @@
+.faqs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+
+.faqs__container {
+    position: relative;
+    width: 600px;
+}
+
+.faqs__out-container {
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faqs__btn {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+}
+
+.faqs__accordion-content {
+    border-bottom: 1px solid black;
+}
+
+.faqs__accordion-content p {
+    margin-bottom: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.faqs__accordion-expand {
+    margin-top: 10%;
+}
