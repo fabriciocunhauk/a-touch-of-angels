@@ -12,18 +12,18 @@
 }
 
 .services-section .service-card .service-card-text {
-    width: 30%;
+    width: 40%;
 }
 
 .services-section .service-card .service-card-text h2 {
     margin-top: 20px;
     margin-bottom: 20px;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .services-section .service-card img {
-    width: 300px;
-    height: 300px;
+    width: 270px;
+    height: 270px;
     border-radius: 50%;
     object-fit: cover;
     padding: 10px;
@@ -39,6 +39,5 @@
 
     .services-section .service-card .service-card-text {
         width: 70%;
-        margin-right: 50px;
     }
 }

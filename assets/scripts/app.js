@@ -94,7 +94,7 @@ cardData.forEach(card => {
     carouselCardDiv.appendChild(cardParagraph);
 });
 
-// Accordion
+// Accordion FAQ section
 
 const accordionBtn = document.querySelectorAll('#faqs-btn');
 const accordionText = document.querySelectorAll('.accordion-text');
