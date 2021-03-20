@@ -36,6 +36,12 @@
 
 .faqs__btn img {
     margin-right: 10px;
+    transform: rotate(-90deg);
+    transition: all 0.2s ease-in-out;
+}
+
+.faqs__btn:hover>img {
+    transform: rotate(0deg);
 }
 
 .faqs__btn:hover {
@@ -53,4 +59,18 @@
 
 .faqs__accordion-expand {
     margin-top: 10%;
+}
+
+@media (max-width: 700px) {
+    .faqs__container {
+        width: 350px;
+    }
+
+    .faqs__btn {
+        height: 70px;
+    }
+
+    .faqs__accordion-expand {
+        margin-top: 20%;
+    }
 }
