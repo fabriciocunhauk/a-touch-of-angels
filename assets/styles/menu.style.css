@@ -1,4 +1,4 @@
-header nav {
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -11,31 +11,31 @@ header nav {
     top: 0;
 }
 
-header nav .nav-title {
+nav .nav-title {
     display: flex;
     color: white;
     margin-left: 20px;
 }
 
-header nav .nav-title .clean-icon {
+nav .nav-title .clean-icon {
     width: 30px;
     height: 30px;
     margin-left: 10px;
 }
 
-header nav .nav-title .clean-icon img {
+nav .nav-title .clean-icon img {
     width: 30px;
     height: 30px;
 }
 
-header nav .menu-container {
+nav .menu-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-right: 20px;
 }
 
-header nav .menu-container .menu-container-call-now-btn {
+nav .menu-container .menu-container-call-now-btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -49,7 +49,7 @@ header nav .menu-container .menu-container-call-now-btn {
     transition: all 0.2s ease-in-out;
 }
 
-header nav .menu-container .menu-container-call-now-btn:hover {
+nav .menu-container .menu-container-call-now-btn:hover {
     transform: scale(1.03);
     background: #1fdb8a;
 }
@@ -73,14 +73,14 @@ header nav .menu-container .menu-container-call-now-btn:hover {
     border-bottom: 2px solid white;
 }
 
-header nav .menu-container img {
+nav .menu-container img {
     display: none;
     margin-left: 40px;
     margin-right: 20px;
     cursor: pointer;
 }
 
-header nav .menu-container .burger-menu-div {
+nav .menu-container .burger-menu-div {
     width: 0;
     height: 565px;
     top: 60px;
@@ -92,12 +92,12 @@ header nav .menu-container .burger-menu-div {
     position: fixed;
 }
 
-header nav .menu-container .burger-menu-div .burger-menu-buttons {
+nav .menu-container .burger-menu-div .burger-menu-buttons {
     text-align: center;
     margin-top: 100px;
 }
 
-header nav .menu-container .burger-menu-div .burger-menu-buttons .link {
+nav .menu-container .burger-menu-div .burger-menu-buttons .link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,21 +113,21 @@ header nav .menu-container .burger-menu-div .burger-menu-buttons .link {
     transition: all 0.4s ease-in-out;
 }
 
-header nav .menu-container .burger-menu-div .burger-menu-buttons .link:hover {
+nav .menu-container .burger-menu-div .burger-menu-buttons .link:hover {
     background: #a7c5eb;
     color: black;
 }
 
 @media (max-width: 768px) {
-    header nav .nav-title {
+    nav .nav-title {
         font-size: 10px;
     }
 
-    header nav .nav-title .clean-icon {
+    nav .nav-title .clean-icon {
         margin-right: 30px;
     }
 
-    header nav .nav-title .clean-icon img {
+    nav .nav-title .clean-icon img {
         margin-left: -5px;
     }
 
@@ -135,15 +135,15 @@ header nav .menu-container .burger-menu-div .burger-menu-buttons .link:hover {
         display: none;
     }
 
-    header nav .menu-container {
+    nav .menu-container {
         margin-right: 0;
     }
 
-    header nav .menu-container img {
+    nav .menu-container img {
         display: flex;
     }
 
-    header nav .menu-container .menu-container-call-now-btn {
+    nav .menu-container .menu-container-call-now-btn {
         margin-right: -20px;
         width: 110px;
     }

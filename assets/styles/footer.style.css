@@ -8,18 +8,18 @@
     background: #4a47a3;
 }
 
-.footer .footer-company-image {
+.footer-company-image {
     display: flex;
     align-items: center;
 }
 
-.footer .footer-company-image .clean-icon {
+.footer-company-image .clean-icon {
     width: 30px;
     height: 30px;
     margin-left: 10px;
 }
 
-.footer .footer-company-image .clean-icon img {
+.clean-icon img {
     width: 30px;
     height: 30px;
 }
