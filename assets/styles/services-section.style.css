@@ -1,27 +1,27 @@
 .services-section {
     width: 100vw;
     background: #F0F0F0;
-    padding: 50px 0;
 }
 
-.services-section .service-card {
+.service-card {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    border-bottom: 1px solid lightgray;
 }
 
-.services-section .service-card .service-card-text {
+.service-card-text {
     width: 40%;
 }
 
-.services-section .service-card .service-card-text h2 {
+.service-card-text h2 {
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 2rem;
 }
 
-.services-section .service-card img {
+.service-card img {
     width: 270px;
     height: 270px;
     border-radius: 50%;
@@ -37,7 +37,7 @@
         padding: 0;
     }
 
-    .services-section .service-card .service-card-text {
+    .service-card-text {
         width: 70%;
     }
 }
